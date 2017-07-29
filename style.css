@@ -157,22 +157,36 @@
 
     .menus {
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
+      align-items: center;
+      margin: 20px 0px;
+    }
+    
+    .menu-item {
+      flex-direction: row;
+      border: 1px solid rgba(0, 0, 0, 0.7);
+      background-color: rgba(37, 76, 25, 0.7);
+      color: #fff;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    .menu-item:active {
+      transform: translate(5px, 5px);
+    }
+    
+    .menu-item:hover {
+      background-color: #DAA520;
     }
 
     .menus a {
-      padding-right: 15px;
-      padding-top: 30px;
-      padding-bottom: 20px;
+      padding: 5px;
       text-decoration: none;
-      font-family: 'Laila', sans-serif;
-      font-size: 30px;
-      color: #000;
+      font-size: 20px;
       text-transform: capitalize;
-    }
-
-    .menus a:hover {
-      color: #f9d947;
+      font-family: 'Laila', sans-serif;
     }
 
     .menu h2 {
@@ -205,7 +219,7 @@
     /*Image Gallery*/
 
     .gallery-box {
-      background-color: #424949;
+      background-color: #e5e5e5;
     }
 
     .wrapper {
@@ -250,7 +264,7 @@
     }
 
     .img-single:hover figcaption {
-      bottom: 50px;
+      bottom: 200px;
       transform: rotate(0);
     }
 
@@ -416,7 +430,7 @@
       }
 
       .menus a {
-        margin: auto;
+        margin-top: 20px;
       }
 
       .menu h3 {
