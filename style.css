@@ -395,7 +395,7 @@
       }
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 767px) {
       .logo img {
         height: 90%;
         width: 90%;
@@ -427,18 +427,15 @@
         }
         
         .pic-one {
-    background-image: url("img/pic1small.jpg");
-     background-position: center;
+    display: none;
         }
         
          .pic-two {
-    background-image: url("img/pic2small.jpg");
-             background-position: center;
+   display: none;
         }
         
          .pic-three {
-    background-image: url("img/pic3small.jpg");
-             background-position: center;
+    display: none;
         }
 
       .home h1 {
