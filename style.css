@@ -74,11 +74,13 @@
       text-align: center;
       font-family: 'Laila', sans-serif;
        font-size: 60px;
-      color: #000;
+      color: #DAA520;
       text-transform: capitalize;
-      margin-top: 30px;
-      padding: 25px;
-      text-shadow: 1px 1px white;
+      margin-top: 20px;
+      padding: 20px;
+      text-shadow: 1px 1px #000;
+        background-color: rgba(0,0,0,0.2);
+        margin-bottom: 20px;
     }
 
     .home section p {
@@ -94,12 +96,13 @@
     }
 
 .main-heading {
-    background-image: url("img/pasta.jpeg");
+    background-image: url("img/dough.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
     width: 80vw;
     margin: auto;
+    height: 400px;
 }
 
     /*pic one*/
