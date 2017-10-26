@@ -57,7 +57,7 @@
 
     .handle {
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
+      background: rgba(37, 76, 25, 0.7);
       text-align: left;
       box-sizing: border-box;
       padding: 10px;
@@ -380,7 +380,7 @@
 #overlay {
     height: 100%;
     width:100%;
-    background: rgba(223, 223, 107,0.7);
+    background: rgba(155, 155, 155,0.9);
     position: fixed;
     left: 0;
     top: 0;
@@ -392,7 +392,7 @@
     width: 100px;
     height: 100px;
     border: 5px solid #fff;
-    border-top-color: firebrick;
+    border-top-color: darkgreen;
     border-radius: 100%;
     margin-top: 500px;
     animation: round 1s linear infinite;
@@ -428,7 +428,7 @@
       }
 
       nav ul {
-        background-color: #454545;
+        background-color: rgba(37, 76, 25, .8);
         display: none;
       }
 
@@ -445,7 +445,7 @@
 
       .handle {
         display: block;
-        background-color: #353535;
+        background-color: rgba(37, 76, 25, .9);
       }
         
         .images {
