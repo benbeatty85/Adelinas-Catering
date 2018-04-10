@@ -335,6 +335,12 @@ top: 0;
 }
 
 /* The dots/bullets/indicators */
+
+.dots {
+background-color: snow;
+padding: 30px;
+}
+
 .dot {
 cursor: pointer;
 height: 15px;
