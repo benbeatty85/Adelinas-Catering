@@ -244,7 +244,7 @@ background-color: rgba(155, 155, 155, 0.8);
 .menus a {
 padding: 15px;
 text-decoration: none;
-font-size: 25px;
+font-size: 20px;
 text-transform: capitalize;
 font-family: 'Laila', sans-serif;
 }
@@ -391,23 +391,6 @@ padding: 20px;
 background-color: rgba(0, 0, 0, 0.8);
 }
 
-.contact h3 {
-font-family: 'Laila', sans-serif;
-font-size: 35px;
-color: #fff;
-padding: 40px;
-text-transform: lowercase;
-}
-
-.contact h3::after {
-content: '';
-width: 100%;
-height: 3px;
-background: #fff;
-display: block;
-margin: 0.4em auto 0
-}
-
 .map {
 display: flex;
 justify-content: center;
@@ -419,8 +402,10 @@ section a {
 text-decoration: none;
 color: #fff;
 font-family: 'noto sans', sans-serif;
-font-size: 24px;
+font-size: 20px;
 transition: color 300ms;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 section a:hover {
@@ -431,6 +416,8 @@ color: khaki;
 color: #fff;
 font-family: 'noto sans', sans-serif;
 font-size: 20px;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 /*footer Section*/
