@@ -1,85 +1,74 @@
-//toggle menu bar
+//Toggle menu
 
-$(document).ready(function(){
-        $('.handle').on('click', function(e){
-            e.preventDefault();
-            $('nav ul').slideToggle(-1000);
-        });
-    });
+$('.menu').on('click', function () {
+    $(this).toggleClass('active');
+    $('.overlay').toggleClass('menu-open');
+});
 
-$(document).ready(function() {
-    $('.menu-link').on('click', function (e) {
-        e.preventDefault();
-        $('nav ul').hide();
-    })
-})
-
-//page loader
-
-var overlay = document.getElementById("overlay");
-
-window.addEventListener('load', function () {
-  overlay.style.display = 'none';
+$('.nav a').on('click', function () {
+    $('.menu').removeClass('active');
+    $('.overlay').removeClass('menu-open');
 });
 
 
- //Smooth Scrolling for navigation
 
+//Smooth Scrolling
 
-    $(document).ready(function(){
-        $('a[href*="#"]').on('click',function (e) {
-            e.preventDefault();
-            var target = this.hash;
-            $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop':  $target.offset().top 
-            }, 800, 'swing', function () {
-                window.location.hash = target;
+$(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
             });
-        });
+        } // End if
     });
+});
 
 
-      // Scrolling effect on desktop navigation
 
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('white');
-            }
+//page loader and delay animation when page loads
 
-            else {
-                  $('nav').removeClass('white');
-            }
-      })
+var loaderOverlay = document.getElementById("page-loader");
+var mainTitle = document.getElementById("title-main");
+var subTitle = document.getElementById("title-second");
+var titlePara = document.getElementById("title-para");
 
-    //slideshow
+window.addEventListener('load', function () {
+    loaderOverlay.style.display = 'none';
+    mainTitle.style.display = 'block';
+    subTitle.style.display = 'block';
+    titlePara.style.display = 'block';
+});
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//Slider
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+$(document).ready(function ($) {
+    $('.carousel').slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        speed: 300,
+        slidesToShow: 2,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<button class=" arrowbutton prev"><span class= "PrevArrow"></span></button>',
+        nextArrow: '<button class=" arrowbutton next"><span class="NextArrow"></span></button>'
+    });
+});
