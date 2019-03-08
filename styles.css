@@ -132,11 +132,11 @@ header {
 }
 
 .menu .bar::before {
-    top: -2rem !important;
+    top: -15px;
 }
 
 .menu .bar::after {
-    top: 2rem !important;
+    top: 15px;
 }
 
 .active .bar {
