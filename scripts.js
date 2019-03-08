@@ -67,8 +67,6 @@ $(document).ready(function ($) {
         slidesToShow: 2,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: '<button class=" arrowbutton prev"><span class= "PrevArrow"></span></button>',
-        nextArrow: '<button class=" arrowbutton next"><span class="NextArrow"></span></button>'
+        autoplaySpeed: 2000
     });
 });

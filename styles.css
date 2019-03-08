@@ -386,6 +386,7 @@ header {
     padding: 0 1rem;
 }
 
+/*
 .arrowbutton {
     width: 10rem;
     display: none;
@@ -440,6 +441,7 @@ header {
 .arrowbutton:hover .NextArrow::after {
     left: 3%;
 }
+*/
 
 
 /*Section - Cooking*/
@@ -449,6 +451,10 @@ header {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("images/kitchen-black-white.jpg") center no-repeat;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/kitchen-black-white.jpg") center no-repeat;
     background-size: cover;
+}
+
+.cooking-text {
+    font-size: 2rem;
 }
 
 /*Section - Contact Us*/
@@ -862,9 +868,11 @@ footer p {
         font-size: 2.6rem;
     }
 
+/*
     .arrowbutton {
         display: block;
     }
+*/
 
     .carousel img {
         height: 400px;
