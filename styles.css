@@ -139,6 +139,31 @@ header {
     top: 15px;
 }
 
+.menu .bar,
+.menu .bar:before,
+.menu .bar:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 4rem;
+    background-color: var(--main-white);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: 350ms;
+    transition: 350ms;
+}
+
+.menu .bar:before {
+    top: -15px;
+}
+
+.menu .bar:after {
+    top: 15px;
+}
+
 .active .bar {
     background-color: transparent;
 }
@@ -155,6 +180,21 @@ header {
 
 .active .bar::before,
 .active .bar::after {
+    top: 0;
+}
+
+.active .bar:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.active .bar:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.active .bar:before,
+.active .bar:after {
     top: 0;
 }
 
