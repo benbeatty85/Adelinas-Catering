@@ -276,6 +276,7 @@ header {
     animation: 500ms fadeDown 500ms forwards;
 }
 
+/*
 #title-second::before,
 #title-second::after {
     content: '';
@@ -296,6 +297,7 @@ header {
 #title-second::after {
     right: -0.1rem;
 }
+*/
 
 /*Section - Our Story*/
 
@@ -713,6 +715,7 @@ footer p {
         padding-top: 2rem;
     }
 
+/*
     #title-second::before,
     #title-second::after {
         width: 10rem;
@@ -727,6 +730,7 @@ footer p {
     #title-second::after {
         right: -2rem;
     }
+*/
 
     #title-para {
         font-size: 4rem;
