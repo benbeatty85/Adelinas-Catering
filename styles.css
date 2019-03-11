@@ -391,7 +391,7 @@ header {
 
 .arrowbutton {
     width: 10rem;
-    display: none;
+    display: none !important;
     cursor: pointer;
     font-size: 5rem;
     background: transparent;
@@ -416,6 +416,7 @@ header {
 
 .PrevArrow::before {
     content: '\2190';
+    display: none;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -427,6 +428,7 @@ header {
 
 .NextArrow::after {
     content: '\2192';
+    display: none;
     position: relative;
     top: 50%;
     left: 0%;
@@ -767,7 +769,7 @@ footer p {
     .store {
         min-height: 40rem;
     }
-    
+
     .carousel img {
         height: 200px;
     }
@@ -879,6 +881,14 @@ footer p {
         display: block;
     }
 
+    .PrevArrow::before {
+        display: block;
+    }
+
+    .NextArrow::after {
+        display: block;
+    }
+
     .carousel img {
         height: 400px;
     }
@@ -886,7 +896,6 @@ footer p {
     #page-loader i {
         font-size: 10rem;
     }
-
 
 }
 
