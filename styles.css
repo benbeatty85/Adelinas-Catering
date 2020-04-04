@@ -109,7 +109,7 @@ header {
     top: 3rem;
     right: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 1000;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -175,7 +175,7 @@ header {
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 999;
     -webkit-transition: all 350ms;
     transition: all 350ms;
     -webkit-transform: scale(0);
@@ -299,6 +299,35 @@ header {
     right: -0.1rem;
 }
 */
+
+/*Section - Covid*/
+
+
+.Covid_update {
+    text-align: center;
+    background-color: #808000;
+    color: white;
+    padding: 0.5em 0;
+    position: fixed;
+    top: 0px;
+    z-index: 998;
+    width: 100%;
+}
+
+.Covid_title {
+    font-size: 3em;
+}
+
+.Covid_paragraph {
+    color: white;
+    font-size: 2em;
+    padding: 0.2em 0.5em;
+}
+
+.Covid_paragraph span {
+    font-weight: bolder;
+}
+
 
 /*Section - Our Story*/
 
