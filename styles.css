@@ -315,12 +315,12 @@ header {
 }
 
 .Covid_title {
-    font-size: 3em;
+    font-size: 1.8em;
 }
 
 .Covid_paragraph {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     padding: 0.2em 0.5em;
 }
 
@@ -806,6 +806,27 @@ footer p {
 }
 
 @media screen and (min-width: 1000px) {
+
+    .Covid_update {
+        text-align: center;
+        background-color: #808000;
+        color: white;
+        padding: 0.5em 0;
+        position: fixed;
+        top: 0px;
+        z-index: 998;
+        width: 100%;
+    }
+
+    .Covid_title {
+        font-size: 3em;
+    }
+
+    .Covid_paragraph {
+        color: white;
+        font-size: 2em;
+        padding: 0.2em 0.5em;
+    }
 
     .container {
         display: -webkit-box;
