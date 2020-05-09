@@ -88,7 +88,7 @@ a {
 header {
     width: 100%;
     height: 100vh;
-    background: url("images/main-image.jpeg") center no-repeat;
+    background: url("images/header_image_new.jpg") center no-repeat;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -236,7 +236,7 @@ header {
 
 #title-main {
     font-family: var(--main-font-family);
-    color: var(--main-font-color);
+/*    color: var(--main-font-color);*/
     font-size: 8rem;
     text-transform: capitalize;
     font-weight: 100;
@@ -247,6 +247,9 @@ header {
     opacity: 0;
     -webkit-animation: 500ms fadeUp 500ms forwards;
     animation: 500ms fadeUp 500ms forwards;
+    background: #b8b8b8;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    color: white;
 }
 
 #title-second {
@@ -275,6 +278,15 @@ header {
     opacity: 0;
     -webkit-animation: 500ms fadeDown 500ms forwards;
     animation: 500ms fadeDown 500ms forwards;
+}
+
+#title-para::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: var(--main-font-color);
+    display: block;
+    margin: 0.7em auto 0;
 }
 
 /*
@@ -830,11 +842,11 @@ footer p {
     }
 
     .Covid_title {
-        font-size: 3em;
+        font-size: 2.3em;
     }
 
     .Covid_paragraph {
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 0.2em 0.5em;
     }
 
