@@ -106,7 +106,7 @@ header {
 .menu {
     padding: 2rem 2.5rem;
     position: fixed;
-    top: 10rem;
+    top: 3rem;
     right: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
