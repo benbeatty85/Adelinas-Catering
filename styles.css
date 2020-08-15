@@ -315,6 +315,7 @@ header {
 /*Section - Covid*/
 
 
+/*
 .Covid_update {
     text-align: center;
     background-color: #808000;
@@ -339,6 +340,7 @@ header {
 .Covid_paragraph span {
     font-weight: bolder;
 }
+*/
 
 
 /*Section - Our Story*/
@@ -419,72 +421,16 @@ header {
     height: 100%;
     width: 80%;
     margin: 0 auto;
-    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
 }
 
 .carousel img {
     -o-object-fit: cover;
     object-fit: cover;
-    height: 150px;
+    height: 250px;
     width: 100%;
-    padding: 0 1rem;
-}
-
-.arrowbutton {
-    width: 10rem;
-    display: none !important;
-    cursor: pointer;
-    font-size: 5rem;
-    background: transparent;
-    color: var(--main-font-color);
-    text-transform: capitalize;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-    border: none;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.prev {
-    left: -10%;
-}
-
-.next {
-    right: -10%;
-}
-
-.PrevArrow::before {
-    content: '\2190';
-    display: none;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 0%;
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-}
-
-.NextArrow::after {
-    content: '\2192';
-    display: none;
-    position: relative;
-    top: 50%;
-    left: 0%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
-}
-
-.arrowbutton:hover .PrevArrow::before {
-    right: 3%;
-}
-
-.arrowbutton:hover .NextArrow::after {
-    left: 3%;
 }
 
 
@@ -811,8 +757,21 @@ footer p {
         min-height: 40rem;
     }
 
+    .carousel {
+        position: relative;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
     .carousel img {
-        height: 200px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
     }
 
 }
@@ -822,7 +781,7 @@ footer p {
     .menu {
         padding: 2rem 2.5rem;
         position: fixed;
-        top: 15rem;
+        top: 3rem;
         right: 3rem;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1000;
@@ -832,7 +791,7 @@ footer p {
 
     .Covid_update {
         text-align: center;
-        background-color: #808000;
+        background-color: #000;
         color: white;
         padding: 0.5em 0;
         position: fixed;
@@ -967,6 +926,24 @@ footer p {
 
     #page-loader i {
         font-size: 10rem;
+    }
+
+    .carousel {
+        position: relative;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        padding: 2rem 0 3rem 0;
+    }
+
+    .carousel img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
     }
 
 }

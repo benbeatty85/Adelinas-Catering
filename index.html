@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,20 +10,21 @@
     <meta name="description" content="Italian food catering company located in the Niagara Region.">
     <meta name="author" content="Adelina Beatty">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Muli" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-   
+
+    <!--
    <section class="Covid_update">
         <h3 class="Covid_title">We're Open</h3>
         <p class="Covid_paragraph">April 2020: Adelina's Catering is currently open for take out. <span>Please call in advance to set up a pick up time.</span></p>
         <p class="Covid_paragraph">(905) 735-9227</p>
     </section>
-    
+-->
+
 
     <header id="home">
 
@@ -48,7 +50,7 @@
         </div>
 
     </header>
-    
+
 
     <section class="our-story" id="story">
         <div class="container">
@@ -85,17 +87,17 @@
         </div>
     </section>
 
-    <div class="carousel">
-        <img src="images/choc-cake-two.JPG">
-        <img src="images/pink-cake.JPG">
-        <img src="images/59016622810--C5F442D8-1D96-4A8B-9EAF-A3E93DCC19E3.JPG">
-        <img src="images/pizzelles.JPG">
-        <img src="images/bowties.JPG">
-        <img src="images/sandwiches.jpg">
-        <img src="images/choc-cake.JPG">
-        <img src="images/IMG_E2480.jpg">
-        <img src="images/59024870540--E8F260AC-A9D6-47E9-AB56-EA6436E9DF10.JPG">
-        <img src="images/charcuterie.jpg">
+    <div class="carousel gallery">
+        <a href="images/choc-cake-two.JPG" data-lightbox="mygallery"><img src="images/choc-cake-two.JPG"></a>
+        <a href="images/pink-cake.JPG" data-lightbox="mygallery"><img src="images/pink-cake.JPG"></a>
+        <a href="images/59016622810--C5F442D8-1D96-4A8B-9EAF-A3E93DCC19E3.JPG" data-lightbox="mygallery"><img src="images/59016622810--C5F442D8-1D96-4A8B-9EAF-A3E93DCC19E3.JPG"></a>
+        <a href="images/pizzelles.JPG" data-lightbox="mygallery"><img src="images/pizzelles.JPG"></a>
+        <a href="images/bowties.JPG" data-lightbox="mygallery"><img src="images/bowties.JPG"></a>
+        <a href="images/sandwiches.jpg" data-lightbox="mygallery"><img src="images/sandwiches.jpg"></a>
+        <a href="images/choc-cake.JPG" data-lightbox="mygallery"><img src="images/choc-cake.JPG"></a>
+        <a href="images/IMG_E2480.jpg" data-lightbox="mygallery"><img src="images/IMG_E2480.jpg"></a>
+        <a href="images/59024870540--E8F260AC-A9D6-47E9-AB56-EA6436E9DF10.JPG" data-lightbox="mygallery"><img src="images/59024870540--E8F260AC-A9D6-47E9-AB56-EA6436E9DF10.JPG"></a>
+        <a href="images/charcuterie.jpg" data-lightbox="mygallery"><img src="images/charcuterie.jpg"></a>
     </div>
 
     <section class="cooking between-sec">
@@ -123,6 +125,7 @@
     <footer>
         <p>&copy; 1987<script>
                 new Date().getFullYear() > 1987 && document.write("-" + new Date().getFullYear());
+
             </script>, Adelina's Catering.</p>
         <p>Website designed and developed by <a class="ben-link" href="http://www.beattydev.com/" target="_blank">Ben Beatty</a></p>
     </footer>
@@ -130,9 +133,10 @@
     <div id="page-loader">
         <i class="fas fa-lemon"></i>
     </div>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
-    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
 </body>
+
 </html>

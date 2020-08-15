@@ -56,19 +56,6 @@ window.addEventListener('load', function () {
 });
 
 
-//Slider
+//Lightbox
 
-$(document).ready(function ($) {
-    $('.carousel').slick({
-        dots: false,
-        infinite: true,
-        arrows: true,
-        speed: 300,
-        slidesToShow: 2,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: '<button class=" arrowbutton prev"><span class= "PrevArrow"></span></button>',
-        nextArrow: '<button class=" arrowbutton next"><span class="NextArrow"></span></button>'
-    });
-});
+
