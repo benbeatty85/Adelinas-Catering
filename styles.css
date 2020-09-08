@@ -237,7 +237,7 @@ header {
 #title-main {
     font-family: var(--main-font-family);
     /*    color: var(--main-font-color);*/
-    font-size: 8rem;
+    font-size: 4.5rem;
     text-transform: capitalize;
     font-weight: 100;
     display: none;
@@ -248,10 +248,11 @@ header {
     -webkit-animation: 500ms fadeUp 500ms forwards;
     animation: 500ms fadeUp 500ms forwards;
     background: #b8b8b8;
-    text-shadow: 4px 3px 0 #7A7A7A;
+/*    text-shadow: 4px 3px 0 #7A7A7A;*/
     color: white;
 }
 
+/*
 #title-second {
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -266,9 +267,10 @@ header {
     -webkit-animation: fadeIn 500ms forwards;
     animation: fadeIn 500ms forwards;
 }
+*/
 
 #title-para {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 5px;
     color: var(--main-white);
     padding-top: 2rem;
@@ -696,13 +698,15 @@ footer p {
     }
 
     #title-main {
-        font-size: 13rem;
+        font-size: 12rem;
     }
 
+/*
     #title-second {
         font-size: 4rem;
         padding-top: 2rem;
     }
+*/
 
     /*
     #title-second::before,
@@ -722,7 +726,7 @@ footer p {
 */
 
     #title-para {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .nav .overlay ul li a {
