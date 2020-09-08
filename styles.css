@@ -432,7 +432,7 @@ header {
 .carousel img {
     -o-object-fit: cover;
     object-fit: cover;
-    height: 250px;
+    height: 150px;
     width: 100%;
 }
 
@@ -924,10 +924,6 @@ footer p {
 
     .NextArrow::after {
         display: block;
-    }
-
-    .carousel img {
-        height: 400px;
     }
 
     #page-loader i {
