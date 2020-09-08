@@ -45,13 +45,13 @@ $(document).ready(function () {
 
 var loaderOverlay = document.getElementById("page-loader");
 var mainTitle = document.getElementById("title-main");
-var subTitle = document.getElementById("title-second");
+//var subTitle = document.getElementById("title-second");
 var titlePara = document.getElementById("title-para");
 
 window.addEventListener('load', function () {
     loaderOverlay.style.display = 'none';
     mainTitle.style.display = 'block';
-    subTitle.style.display = 'block';
+//    subTitle.style.display = 'block';
     titlePara.style.display = 'block';
 });
 
