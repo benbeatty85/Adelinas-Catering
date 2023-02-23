@@ -137,7 +137,7 @@ header {
 }
 
 .menu .bar::after {
-    top: 15px;
+    top: 8px;
 }
 
 .active .bar {
