@@ -319,8 +319,8 @@ header {
 
 .Covid_update {
     text-align: center;
-    background-color: #fff;
-    color: #C41E3A;
+    background-color: #B22222;
+    color: #fff;
     padding: 0.5em 0;
     position: fixed;
     top: 0px;
@@ -333,7 +333,7 @@ header {
 }
 
 .Covid_paragraph {
-    color: #C41E3A !important;
+    color: #fff !important;
     font-size: 1em;
     padding: 0.2em 0.5em;
 }
@@ -795,8 +795,8 @@ footer p {
 
     .Covid_update {
         text-align: center;
-        background-color: #fff;
-        color: #C41E3A;
+        background-color: #B22222;
+        color: #fff;
         padding: 0.5em 0;
         position: fixed;
         top: 0px;
